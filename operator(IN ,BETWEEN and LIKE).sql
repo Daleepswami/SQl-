@@ -145,3 +145,54 @@ FROM
     country
 WHERE
     name LIKE '__a__';
+
+
+SELECT 
+    name, continent
+FROM
+    country
+WHERE
+    name LIKE 'A%';
+SELECT 
+    name, continent
+FROM
+    country
+WHERE
+    name LIKE '%da%';
+
+SELECT 
+    name, continent
+FROM
+    country
+WHERE
+    name LIKE '_u%a%';
+
+-- Q.1  get the name continent and region from country where second letter a of region
+SELECT 
+    name, Continent, Region
+FROM
+    country
+WHERE
+    region LIKE '_a%';
+-- Q.2  get the name continent and region from country where in continent last third letter I 
+SELECT 
+    name, Continent, Region
+FROM
+    country
+WHERE
+    continent LIKE '%i__';
+-- Q.3  get the name continent and region from country where in continent second letter "c" and second letter "i"
+SELECT 
+    name, Continent, Region
+FROM
+    country
+WHERE
+    continent LIKE '_c%i_';
+-- Q.4  get the name continent and region from country where in continent atleast two "a" speated by character 
+SELECT 
+    name, Continent, Region
+FROM
+    country
+WHERE
+    continent LIKE '%a_a%';
+    
