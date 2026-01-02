@@ -115,6 +115,29 @@ FROM
 
 
 
+-- Round():-
+use world;
+select lifeexpectancy,round(lifeexpectancy) from country;
+
+
+select round(438.558),round(83.687,2),round(276.23,-3);
+-- truncate:-->> digit of after decimal point  
+select truncate(456.67,0);
+-- mod()--->>>  this returns the remainder when dividend is divided by divisor
+select mod(10,3);
+-- pow():-  calculate a number raised to the power of another number (base and exponent)
+select pow(2,3),pow(5,3);
+
+-- ceil():-  upper value the number 
+select ceil(45.1216),ceil(00.000000000000001);
+
+-- floor():--->> lower value the number 
+select floor(11.112) ;
+
+-- distinct():- findout the the unique values
+select distinct(continent) from country;
+
+
 
 
  
